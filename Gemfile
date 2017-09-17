@@ -35,6 +35,8 @@ gem 'jbuilder', '~> 2.5'
 
 # Bootstrap 4 Ruby Gem for Rails
 gem 'bootstrap', '~> 4.0.0.beta'
+# The font-awesome font bundled as an asset for the rails asset pipeline
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

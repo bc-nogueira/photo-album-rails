@@ -9,6 +9,12 @@
   </head>
 
   <body>
+    <%= image_tag 'logo.png', class: 'mx-auto d-block' %>
+    <%= button_tag class: 'btn mx-auto d-block' do %>
+      <%= fa_icon 'plus' %>
+      Adicionar imagem
+    <% end %>
+    <br><br><br>
     <%= yield %>
   </body>
 </html>
