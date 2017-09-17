@@ -1,0 +1,17 @@
+.text-default-color {
+  color: $default-color;
+}
+
+.btn-default {
+  background-color: $default-color;
+  color: #fff;
+}
+
+.btn-default:hover {
+  background-color: $default-color-lighter;
+  color: #000;
+}
+
+.pointer-cursor {
+  cursor: pointer;
+}

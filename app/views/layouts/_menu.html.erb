@@ -1,0 +1,15 @@
+<div class="text-center">
+  <% unless current_page?(photos_path) || current_page?(root_path) %>
+      <%= link_to photos_path, class: 'btn btn-default mx-auto' do %>
+          <%= fa_icon 'picture-o' %>
+          <span class="ml-1">Ver álbum</span>
+      <% end %>
+  <% end %>
+
+  <% unless current_page? new_photo_path %>
+      <%= link_to new_photo_path, class: 'btn btn-default mx-auto' do %>
+          <%= fa_icon 'plus' %>
+          <span class="ml-1">Adicionar imagem</span>
+      <% end %>
+  <% end %>
+</div>

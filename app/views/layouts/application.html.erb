@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>PhotoAlbum</title>
-    <%= csrf_meta_tags %>
+<head>
+  <title>PhotoAlbum</title>
+  <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
 
-  <body>
-    <%= image_tag 'logo.png', class: 'mx-auto d-block' %>
-    <%= button_tag class: 'btn mx-auto d-block' do %>
-      <%= fa_icon 'plus' %>
-      Adicionar imagem
-    <% end %>
-    <br><br><br>
-    <%= yield %>
-  </body>
+<body>
+<header>
+  <%= render 'layouts/banner' %>
+  <%= render 'layouts/menu' %>
+</header>
+<%= yield %>
+</body>
 </html>

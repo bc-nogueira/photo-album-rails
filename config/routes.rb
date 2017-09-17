@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
-  root to: 'pages#home'
+  root to: 'photos#index'
 
   resources :pages, path: '', only: [] do
     collection do
-      get :home
+      get :about
     end
   end
+
+  resources :photos, only: [:index, :new]
 end

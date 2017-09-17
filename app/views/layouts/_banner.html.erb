@@ -1,0 +1,10 @@
+<div class="d-flex">
+  <%= link_to root_path, class: 'mx-auto d-block pl-2' do %>
+      <%= image_tag 'logo.png' %>
+  <% end %>
+
+  <%= link_to about_pages_path do %>
+      <%= fa_icon 'question-circle-o',
+                  class: 'h-100 pt-2 pr-2 fa-2x text-default-color pointer-cursor' %>
+  <% end %>
+</div>
