@@ -1,16 +1,21 @@
-<div class="card-deck">
-  <% @photos.each do |photo| %>
-      <div class="card text-center" style="width: 20rem;">
-        <%= cl_image_tag photo.photo.card, class: 'card-img-top' %>
-        <div class="card-body">
-          <h3 class="card-title"><%= photo.title %></h3>
-          <a href="#" class="btn btn-default">Visualizar</a>
-          <%= link_to 'Excluir',
-                      photo_path(photo),
-                      method: :delete,
-                      data: { confirm: 'Tem certeza?'} %>
-        </div>
-      </div>
-      <br>
-  <% end %>
+<div class="centered">
+  <section class="cards-photo">
+    <% @photos.each do |photo| %>
+        <article class="card-photo">
+            <%= cl_image_tag photo.photo.card, class: 'card-img-top bb-photo-card' %>
+            <div class="card-body text-center">
+              <h3 class="mb-0"><%= photo.title %></h3>
+            </div>
+            <div class="card-footer d-flex justify-content-between">
+              <a href="#" class="btn btn-default">Visualizar</a>
+              <%= link_to 'Excluir',
+                          photo_path(photo),
+                          method: :delete,
+                          data: { confirm: 'Tem certeza?'},
+                          class: 'btn btn-default' %>
+            </div>
+        </article>
+        <br>
+    <% end %>
+  </section>
 </div>

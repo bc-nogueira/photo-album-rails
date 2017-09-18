@@ -9,7 +9,7 @@ class PhotoUploader < CarrierWave::Uploader::Base
   end
 
   version :card do
-    resize_to_fit(318, 180)
+    resize_to_fill(362, 200)
   end
 
   def public_id

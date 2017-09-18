@@ -15,3 +15,20 @@
 .pointer-cursor {
   cursor: pointer;
 }
+
+.cards-photo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-photo {
+  flex: 0 1 calc(25% - 1em);
+  margin: 1rem .25em;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  border-radius: .25rem;
+}
+
+.bb-photo-card {
+  border-bottom: 1px solid $card-border-color;
+}
