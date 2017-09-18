@@ -37,10 +37,16 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap', '~> 4.0.0.beta'
 # The font-awesome font bundled as an asset for the rails asset pipeline
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
+# Classier solution for file uploads for Rails
+gem 'carrierwave'
+# Cloudinary GEM for Ruby on Rails integration
+gem 'cloudinary'
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platform: :mri
+  # Pretty print your Ruby objects with style
+  gem 'awesome_print', '~> 1.8'
+  # Pry is a powerful alternative to the standard IRB shell for Ruby.
+  gem 'pry', '~> 0.10.4'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
 end

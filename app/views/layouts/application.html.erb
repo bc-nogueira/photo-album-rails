@@ -13,6 +13,11 @@
   <%= render 'layouts/banner' %>
   <%= render 'layouts/menu' %>
 </header>
-<%= yield %>
+<div class="container mt-3">
+  <% flash.each do |key, value| %>
+      <div class="alert alert-<%= key %>"><%= value %></div>
+  <% end %>
+  <%= yield %>
+</div>
 </body>
 </html>

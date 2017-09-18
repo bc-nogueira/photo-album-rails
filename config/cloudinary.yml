@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: durval88
+  api_key: '719697826633796'
+  api_secret: jysxxpF0tLzmjDUQ0CVGHN-zrEE
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: durval88
+  api_key: '719697826633796'
+  api_secret: jysxxpF0tLzmjDUQ0CVGHN-zrEE
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: durval88
+  api_key: '719697826633796'
+  api_secret: jysxxpF0tLzmjDUQ0CVGHN-zrEE
+  enhance_image_tag: true
+  static_image_support: false

@@ -7,5 +7,5 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :photos, only: [:index, :new]
+  resources :photos, only: [:index, :new, :create, :destroy]
 end
