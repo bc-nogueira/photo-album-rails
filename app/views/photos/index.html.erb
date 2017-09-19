@@ -7,7 +7,7 @@
               <h3 class="mb-0"><%= photo.title %></h3>
             </div>
             <div class="card-footer d-flex justify-content-between">
-              <a href="#" class="btn btn-default">Visualizar</a>
+              <%= link_to 'Visualizar', photo_path(photo), class: 'btn btn-default' %>
               <%= link_to 'Excluir',
                           photo_path(photo),
                           method: :delete,

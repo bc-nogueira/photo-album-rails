@@ -1,0 +1,27 @@
+<div class="card">
+  <%= cl_image_tag @photo.photo, class: 'card-img-top' %>
+  <div class="card-body">
+    <h1 class="card-title text-center"><b><%= @photo.title %></b></h1>
+
+
+    <div class="d-flex justify-content-around">
+      <span>
+        <b>Data:</b> <%= @photo.date %>
+      </span>
+
+      <span>
+        <b>Local:</b> <%= @photo.location %>
+      </span>
+    </div>
+
+
+  </div>
+  <div class="card-footer d-flex justify-content-around">
+    <%= link_to 'Voltar', root_path, class: 'btn btn-default' %>
+    <%= link_to 'Excluir',
+                photo_path(@photo),
+                method: :delete,
+                data: { confirm: 'Tem certeza?'},
+                class: 'btn btn-default' %>
+  </div>
+</div>
